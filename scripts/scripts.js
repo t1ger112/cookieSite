@@ -8,7 +8,8 @@ window.onload = function() {
         messageBox.style.display = "flex";
     }
 
-    console.log("Pageload Complete");
+    displayCookie();
+    console.log("Pageload Complete!");
 }
 
 
@@ -20,9 +21,10 @@ function consentButtonClicked(){
 
 function setCookie(cookieName, cookieValue) {
   const timeNow = new Date();
-  timeNow.setTime(timeNow.getTime() + (1*24*60*60*1000));
+  timeNow.setTime(timeNow.getTime() + (300000));
   let expires = "expires="+ timeNow.toUTCString();
   document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";";
+  displayCookie();
 }
 
 function getCookie(cookieName) {
@@ -41,5 +43,17 @@ function getCookie(cookieName) {
   return "";
 }
 
-console.log(getCookie("consentGiven")); 
-
+function displayCookie(){
+    if (getCookie("consentGiven") == "true"){
+        const outputBox = document.getElementById("favOutputBox");
+        const cookieValue = getCookie("favCookie");
+        if (cookieValue != ""){
+            outputBox.innerHTML = cookieValue;
+        } else {
+            outputBox.innerHTML = "Not selected yet!";
+        }
+    } else {
+        const messageBox = document.getElementById("messageContainer");
+        messageBox.style.display = "flex";
+    }
+}
