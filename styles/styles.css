@@ -103,7 +103,15 @@ body{
     flex-wrap: wrap;
     text-align: center;  
 }
-
+#cookie1-icon{
+    background-color:rgb(121, 90, 25); 
+}
+#cookie2-icon{
+    background-color: rgb(218, 176, 86);
+}
+#cookie3-icon{
+    background-color: rgb(218, 176, 86);
+}
 
 
 .text-heading{
