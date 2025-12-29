@@ -55,5 +55,9 @@ function displayCookie(){
     } else {
         const messageBox = document.getElementById("messageContainer");
         messageBox.style.display = "flex";
+        const outputBox = document.getElementById("favOutputBox");
+        setCookie('favCookie', '');
+        outputBox.innerHTML = "Not selected yet!";
+        
     }
 }
