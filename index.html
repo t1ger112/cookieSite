@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Cookies Compliant Mini-Site for MMU unit legal and ethical section."/>
         <meta name="author" content="Freddie Robinson - MMUID: 24794531"/>
+        <script src="/scripts/scripts.js" defer></script>
         <link rel="stylesheet" type="text/css" href="./styles/styles.css?v=65y1ny65da46149f848awd41ty3546" />
         <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');</style>
 
@@ -15,7 +16,7 @@
 
     <body>
 
-        <div class="message-cont">
+        <div id="messageContainer" class="message-cont">
             <div class="message-box">
                 <div class="message-segment">
                     <a class="text-heading">This site uses cookies!</a>
@@ -34,7 +35,7 @@
                 </div> 
                 <div class="message-segment">
                     <a class="text-normal" style="margin-bottom: 0.25rem;">Click "OK" to consent to these terms and continue to use the cookie selector site:</a>
-                    <button id="consent-button">OK</button> 
+                    <button id="consent-button" onclick="consentButtonClicked()">OK</button> 
                 </div>
             </div>
         </div>
