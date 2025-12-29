@@ -1,0 +1,15 @@
+
+
+.body{
+    margin: 0;
+    width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-heading{
+    font-size: 2rem;
+}
+
+.text-normal{
+    font-size: 1.25rem; 
+}
