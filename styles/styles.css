@@ -94,7 +94,7 @@ body{
     display: flex;
     background-color: var(--content-col);
     padding: var(--section-padding);
-    margin: 4rem 0rem;
+    margin: 2.5rem 0rem;
     height: auto;
     flex-direction: column;
     z-index: 1;
