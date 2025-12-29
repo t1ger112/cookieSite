@@ -28,7 +28,51 @@ body{
 .container{
     display: flex; 
     flex-direction: column;
-    overflow: hidden; 
+    overflow: hidden;
+    z-index: 2;
+}
+
+.message-cont{
+    display: flex; 
+    flex-direction: column;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box{
+    width: 50%;
+    min-width: 20rem; 
+    max-width: 30rem; 
+    height: 45%;  
+    background-color: var(--accent-col); 
+    border-radius: 1rem;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message-segment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+ 
+#consent-button{
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem; 
+    font-weight: bold;
+    align-self: flex-end;
 }
 
 .spacer{
@@ -43,6 +87,7 @@ body{
     display: flex;
     background-color:  var(--accent-col);
     padding: var(--section-padding);
+    z-index: 99;
 }
 
 .content{
@@ -52,6 +97,7 @@ body{
     margin: 4rem 0rem;
     height: auto;
     flex-direction: column;
+    z-index: 1;
 }
 
 .footer{
@@ -61,6 +107,7 @@ body{
     position: fixed;
     bottom: 0px;
     width: 100%;
+    z-index: 98;
 }
 
 
@@ -121,6 +168,10 @@ body{
 }
 .text-normal{
     font-size: 1.25rem; 
+    color: var(--text-col);
+}
+.text-small{
+    font-size: 1.rem; 
     color: var(--text-col);
 }
 .text-footer{

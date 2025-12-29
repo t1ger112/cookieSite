@@ -15,15 +15,41 @@
 
     <body>
 
+        <div class="message-cont">
+            <div class="message-box">
+                <div class="message-segment">
+                    <a class="text-heading">This site uses cookies!</a>
+                    <a class="text-normal">This site uses essential cookies to operate for the following purposes:</a>
+                    <ul> 
+                        <li style="margin-bottom: 0.75rem; margin-right: 1rem;"> 
+                            <a class="text-small">Storing cookie snack preferences locally on this device</a>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; margin-right: 1rem;"> 
+                            <a class="text-small">Displaying cookie snack preferences stored locally on this device to the user</a>
+                        </li>
+                         <li style="margin-bottom: 0.25rem; margin-right: 1rem;"> 
+                            <a href="/terms" class="text-small">Click to view full Terms & Conditions</a>  
+                        </li> 
+                    </ul>
+                </div> 
+                <div class="message-segment">
+                    <a class="text-normal" style="margin-bottom: 0.25rem;">Click "OK" to consent to these terms and continue to use the cookie selector site:</a>
+                    <button id="consent-button">OK</button> 
+                </div>
+            </div>
+        </div>
+
         <div class="container">
 
             <div class="header">
-            <a class="text-heading">Cookies Compliant Mini-Site</a>
+            <a class="text-heading">Cookies Compliant Mini-Site</a>  
             </div>
 
             <div class="content">
 
-                <a class="text-normal">Click to store favorite cookie:</a>
+                <a class="text-heading" style="margin-bottom: 1rem;">Cookie Selector:</a>
+
+                <a class="text-normal">Click to store your favorite cookie:</a>
 
                 <div class="jar-list">
                     <div id="cookie1" class="item-cont">
