@@ -1,15 +1,52 @@
 
 
-.body{
-    margin: 0;
-    width: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root{
+    --content-col: #ffffff;
+    --accent-col: #d1d1d1;
+    --text-col: #000000;
+    --text-font: "Roboto", sans-serif;
+    --section-padding: 1rem 2rem;
 }
+
+html {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    font-family: var(--text-font);
+}
+
+.header{
+    background-color:  var(--accent-col);
+    padding: var(--section-padding);
+}
+
+.content{
+    background-color: var(--content-col);
+    padding: var(--section-padding);
+    margin: 5rem 0rem;
+}
+
+.footer{
+    background-color: var(--accent-col);
+    padding: var(--section-padding);
+}
+
+
 
 .text-heading{
     font-size: 2rem;
+    color: var(--text-col);
+    font-weight: bold;
 }
-
 .text-normal{
     font-size: 1.25rem; 
+    color: var(--text-col);
+}
+.text-footer{
+    font-size: 0.75rem; 
+    color: var(--text-col);
 }
